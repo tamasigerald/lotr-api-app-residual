@@ -1,0 +1,221 @@
+/* 7D8491
+2D2D2A
+591F0A */
+
+
+@import 'reset.css';
+
+:root {
+    --background: #F0F4EF;
+    --dark: #2D2D2A;
+    --gold: #E09F3E;
+}
+
+@font-face {
+    font-family: Ringbearer;
+    src: url('../assets/font/ringbearer/RINGM___.TTF');
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--background);
+    font-family: Ringbearer;
+    color: var(--dark);
+    font-size: 18px;
+}
+
+.hero h1 {
+    font-size: 5rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.nav__logo  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* width: 100px; */
+    margin-left: 10%;
+}
+
+.nav__logo img {
+    height: 90%;
+}
+
+.nav__search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.nav__input, textarea {
+    background-color: var(--background);
+}
+
+.nav__input {
+    width: 100%;
+    margin: 0 15px;
+    border-color: var(--gold);
+    border-style: solid;
+    border-width: 2px;
+    outline: 0;
+    padding: 5px 10px;
+    color: var(--dark);
+}
+
+.nav__menu {
+    margin-right: 10%;
+    align-self: flex-end;
+}
+
+.nav__menu ul {
+    margin-bottom: 20px;
+}
+
+.nav__link {
+    padding: 15px;
+    height: 100%;
+    text-decoration: none;
+    color: var(--gold);
+}
+
+.active, .nav__link:hover {
+    background-color: var(--dark);
+}
+
+
+.hero {
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10%;
+}
+
+.hero h2 {
+    font-size: 1.8rem;
+}
+
+.container {
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.content__li {
+    padding: 10px 5px;
+    text-decoration: none;
+    color: var(--dark);
+    font-size: 1.4rem;
+}
+
+.content__li:hover {
+    background-color: var(--gold);
+}
+
+
+.card__title {
+    font-size: 2rem;
+    padding: 10px 20px;
+    background-color: var(--dark);
+    color: var(--gold);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.card {
+    width: 100%;
+}
+
+.card__content {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+.card__info {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    width: 45%;
+}
+
+.card__id {
+    text-align: end;
+    width: 45%;
+}
+
+.wiki-link {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    width: 45%;
+    color: var(--dark);
+}
+
+.wiki-link:hover {
+    color: var(--gold);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 0.8rem;
+}
+
+footer p {
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+
+@media screen and (max-width: 750px) {
+    html {
+        font-size: 14px;
+    }
+
+    .nav__logo {
+        margin-left: 5%;
+    }
+    .nav__menu {
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 450px) {
+    html {
+        font-size: 10px;
+    }
+}
