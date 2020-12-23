@@ -229,7 +229,7 @@ const getHeader = (body) => {
     })
     logoCont$$.classList.add('nav__logo');
     logoCont$$.setAttribute('href', '#');
-    logo$$.setAttribute('src', './assets/img/logo.svg');
+    logo$$.setAttribute('src', './src/assets/img/logo.svg');
     const nav$$ = document.createElement('nav');
     nav$$.classList.add('nav__menu');
     header$$.classList.add('animate__animated');
